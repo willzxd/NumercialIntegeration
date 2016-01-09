@@ -1,5 +1,17 @@
 #Mini-Project: Numerical Methods
-#### Do not copy the code for your homework
+##### Do not copy the code for your homework
+##### This repository is only for archive
+##### From ECE 551
+##### Update date: Jan 9, 2016
+##Overview
+Numerical Integration Program wrote by C++. 
+
+* Define Polish Expression
+* Expression evaluation
+* Nest expression
+* Numerical integration with user-defined precision and range
+* Mento carlo integration with user-defined parameters
+* Gradient max/min with user-defined parameters
 
 ### Parsing functions
 
@@ -40,6 +52,8 @@ command "numint" (short for "numerical integration").
 * The second argument will be the "stepsize" (that is the width of each rectangle).
 * The remaining arguments come in pairs, specifying the range of integration for each parameter. There must be one range (pair of numbers) for each parameter.
 
+Input example:
+
 	define  (f x y) = (+ (* 2 x) y)
 	numint f 0.001 -1 1 4 5
 
@@ -47,16 +61,17 @@ This would compute the volume under the curve of f(x,y) = 2*x + y with x ranging
 
 ###Monte Carlo Integration
 The arguments to "mcint" are the same as "numint" except that the second argument is the number of trials (the number of random points to pick) instead of the step size.  The first parameter is still the function name, and the remaining parmaters are still the ranges to integrate over.
- 
+Input example:
 
+	define  (f x y) = (+ (* 2 x) y)
+	mcint f 1000 -1 1 4 5
+	
 ###Gradient Ascent
 
 The commands should take the following arguments:
-  1. The name of the function
-  2. gamma
-  3. convergedDistance
-  4. The start point, which will have as many numbers as the function has
-     parameters.
 
-      
+  * The name of the function
+  * gamma
+  * convergedDistance
+  * The start point, which will have as many numbers as the function has parameters.
       
