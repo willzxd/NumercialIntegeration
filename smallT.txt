@@ -1,0 +1,4 @@
+define (a x y z) = (+ (* x y) (- z 3))
+define (b x y) = (+ 3 (* x y))
+define (c x y zqweq) = (a x y (b zqweq (* 7 x)))
+evaluate (c -1 9.2 6)

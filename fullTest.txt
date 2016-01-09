@@ -1,0 +1,21 @@
+define (a x   y   z) = (+ (* x  y) (- z  3))
+define (b x  y) = (+ 3   (* x   y))
+define (c x y zqweq) = (a x y   (b  zqweq (*  7 x)))
+define (d) = 4.2
+define (e x) = x
+define (f x) = (pow (*    (d) (sqrt (e x))) 2     )
+evaluate (a 3 4.2 5)
+evaluate (a -1 9.2 6)
+evaluate (b 3   4.2)
+evaluate (c -1 9.2 6)
+evaluate (d)
+evaluate (e 3)
+evaluate (f 4)
+evaluate (a (b   1 2) (b 3   4) (a 5 6 7))
+define (g x y) = (+ (* 2 x) y)
+numint g 0.1 -1 1 4 5
+mcint g 1000 -1 1 4 5
+define (h x) = (+ 3 (* -1 (pow x 2)))
+max h 0.1 0.01 -1
+define (i x) = (+ 3 (* 1 (pow x 2)))
+min i 0.1 0.01 -1
